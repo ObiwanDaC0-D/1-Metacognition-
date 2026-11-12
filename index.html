@@ -49,7 +49,8 @@ graph.addEventListener("pointermove",e=>{if(!panPointer||e.pointerId!==panPointe
 graph.addEventListener("pointerup",e=>{if(panPointer?.id===e.pointerId)panPointer=null});graph.addEventListener("pointercancel",()=>{panPointer=null;dragNode=null});
 graph.addEventListener("wheel",e=>{e.preventDefault();graphZoom(e.deltaY<0?1.1:.9)},{passive:false});
 
-// Source categories describe document type, not numeric strength or causal proof.\nconst LANDMARKS=[
+// Source categories describe document type, not numeric strength or causal proof.
+const LANDMARKS=[
 [1885,"Hermann Ebbinghaus","Memory and forgetting experiments","Experimental precursors to learning monitoring","https://doi.org/10.1037/10011-000"],
 [1976,"John Flavell","Metacognitive aspects of problem solving","Early articulation of metacognition",""],
 [1979,"John Flavell","Metacognition and cognitive monitoring","Foundational account of metacognitive knowledge and monitoring","https://doi.org/10.1037/0003-066X.34.10.906"],
